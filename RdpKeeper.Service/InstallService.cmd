@@ -8,7 +8,7 @@ if not defined installutilexe echo error: can't find installutil.exe & goto :end
 if not exist "%installutilexe%" echo error: %installutilexe%: not found & goto :end
 
 
-%installutilexe% %~dp0RdpKeeper.exe
+%installutilexe% "%~dp0RdpKeeper.exe"
 
 
 :end
